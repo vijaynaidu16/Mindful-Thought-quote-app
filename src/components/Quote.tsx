@@ -42,7 +42,7 @@ const Quote = () => {
     </div>
   ) : (
     <div className="min-h-svh flex flex-col">
-        <h1 className="Honk text-8xl text-center mt-10">Mindful Thought</h1>
+      <h1 className="Honk text-8xl text-center mt-10">Mindful Thought</h1>
       <div className="flex-1 flex flex-col items-center justify-center text-center">
         {quote && (
           <div key={quote.id}>
@@ -52,10 +52,17 @@ const Quote = () => {
             </div>
           </div>
         )}
-        <Button className="outlined border-2 mt-5" onClick={handleRefresh}>
-          New Quote
-          <SvgFile />
-        </Button>
+        <div className=" ">
+          <Button
+            className="outlined border-2 mt-5 text-lg"
+            onClick={handleRefresh}
+          >
+            New Quote
+            <span className="flex justify-center items-center">
+              <SvgFile />
+            </span>
+          </Button>
+        </div>
       </div>
     </div>
   );
