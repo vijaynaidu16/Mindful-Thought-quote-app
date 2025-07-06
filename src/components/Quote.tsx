@@ -64,6 +64,20 @@ const Quote = () => {
           </Button>
         </div>
       </div>
+
+      <div className="text-center mb-48">
+        <h2>
+          Made by{" "}
+          <a
+            href="https://github.com/vijaynaidu16"
+            target="_blank"
+            className="underline"
+          >
+            Vijay
+          </a>
+          ❤️‍🔥
+        </h2>
+      </div>
     </div>
   );
 };
